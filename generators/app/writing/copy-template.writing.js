@@ -34,6 +34,7 @@ module.exports = {
           .replace(/([a-z])([A-Z])/g, '$1-$2')
           .replace(/[\s_]+/g, '-')
           .replace(/-\./, '.')
+          .replace(/-tests-/, '__tests__')
           .toLowerCase()
         : templatePath.trim();
 

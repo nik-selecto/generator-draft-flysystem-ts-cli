@@ -2,10 +2,11 @@
 const Generator = require('yeoman-generator');
 
 const SAVE_DEV_DEPENDENCIES = [
+  { dependency: '@draft-flysystem-ts/general' },
+  { dependency: '@draft-flysystem-ts/flysystem' },
   { dependency: '@types/node' },
   { dependency: 'typescript' },
   { dependency: 'ts-node' },
-  { dependency: 'ts-node-dev' },
   { dependency: 'jest' },
   { dependency: '@jest/types' },
   { dependency: '@types/jest' },
@@ -15,7 +16,7 @@ const SAVE_DEV_DEPENDENCIES = [
   { dependency: '@typescript-eslint/eslint-plugin' },
   { dependency: '@typescript-eslint/parser' },
   { dependency: '@types/dotenv' },
-  { dependency: 'husky' },
+  { dependency: 'dotenv' },
 ];
 
 /**

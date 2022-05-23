@@ -1,5 +1,5 @@
 {
-  "name": "generator-for-adapter",
+  "name": "@draft-flysystem-ts/cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,27 +9,15 @@
   "keywords": [
     "yeoman-generator"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "echo any build script is required",
+    "test": "",
+    "lint": ""
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "glob": "^7.2.0",
     "yeoman-generator": "^5.6.1"
-  },
-  "devDependencies": {
-    "eslint": "^8.8.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "husky": "^7.0.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   }
 }

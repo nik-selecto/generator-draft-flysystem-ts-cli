@@ -5,16 +5,23 @@ const {
 const {
   loopAskProjectName,
   saveDevDependenciesCheckbox,
-  dependenciesCheckbox,
+  // dependenciesCheckbox,
 } = require('./prompting/index.prompting');
 const {
   saveDevDependenciesInstall,
-  dependendiesInstall,
+  // dependendiesInstall,
 } = require('./install/index.install');
 
 module.exports = class extends Generator {
   constructor(args, opts) {
     super(args, opts);
+
+    process.env = {
+      ...process.env,
+      ...{
+        LINK: 'https://nik-selecto.github.io/draft-flysystem-ts',
+      },
+    };
 
     this.argument('appName', { required: false });
   }
@@ -25,7 +32,7 @@ module.exports = class extends Generator {
 
   async prompting() {
     await loopAskProjectName(this);
-    await dependenciesCheckbox(this);
+    // await dependenciesCheckbox(this);
     await saveDevDependenciesCheckbox(this);
   }
 
@@ -46,7 +53,7 @@ module.exports = class extends Generator {
   }
 
   async install() {
-    await dependendiesInstall(this);
+    // await dependendiesInstall(this);
     await saveDevDependenciesInstall(this);
   }
 };
