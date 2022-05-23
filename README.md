@@ -20,7 +20,7 @@ git clone https://github.com/nik-selecto/generator-draft-flysystem-ts-cli.git
 ```
 * Enter to the repository and link it
 ```
-cd generator-draft-flysystem-ts-cli && npm link && cd ..
+cd generator-draft-flysystem-ts-cli && npm i && npm link && cd ..
 ```
 * Run cli (optionaly you may add name of the adapter(the same with project, root-folder...) add the end of below command)
 ```
