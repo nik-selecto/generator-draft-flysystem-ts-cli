@@ -11,11 +11,6 @@ const {
   saveDevDependenciesInstall,
   dependendiesInstall,
 } = require('./install/index.install');
-const {
-  askOpenProjectInVs,
-  gitInitAddCommit,
-  npxHuskyInstall,
-} = require('./end/index.end');
 
 module.exports = class extends Generator {
   constructor(args, opts) {
@@ -53,11 +48,5 @@ module.exports = class extends Generator {
   async install() {
     await dependendiesInstall(this);
     await saveDevDependenciesInstall(this);
-  }
-
-  async end() {
-    await gitInitAddCommit(this);
-    await askOpenProjectInVs(this);
-    await npxHuskyInstall(this);
   }
 };
