@@ -1,5 +1,5 @@
 {
-  "name": "@draft-flysystem-ts/cli",
+  "name": "generator-draft-flysystem-ts-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

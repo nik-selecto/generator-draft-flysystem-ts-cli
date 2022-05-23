@@ -20,10 +20,10 @@ module.exports = {
     const files = glob.sync('**', {
       dot: true, nodir: true, cwd: root,
     });
+    let _appName = appName.replace(/[\W_]/, '-');
 
     for (let i = 0; i < files.length; ++i) {
       const templatePath = files[i];
-      let _appName = appName.replace(/[\W_]/, '');
 
       if (/.adapter/.test(templatePath)) _appName = _appName.replace(/adapter/i, '');
 
