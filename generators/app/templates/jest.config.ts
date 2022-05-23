@@ -9,4 +9,6 @@ export default async (): Promise<Config.InitialOptions> => ({
     detectLeaks: true,
     preset: 'ts-jest',
     testEnvironment: 'node',
+    rootDir: 'src',
+    moduleDirectories: ['<rootDir>/node_modules'],
 });
